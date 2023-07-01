@@ -7,21 +7,21 @@ left = \relative c' {
   \key e \major
   << { \voiceOne 
       r4 \ottava 0 \clef "treble" dis'8 r8 cis,16 e r8 gis'8 r8 | \clef "bass" 
-      r4 \ottava 0 \clef "treble" \ottava 1 dis'8 r4 r8 gis8 r8 | \ottava 0\clef "bass" 
-      r4 \ottava 0 \clef "treble" \ottava 2 dis'8 r4 r8 gis8 r8 | \ottava 0\clef "bass" 
-      r4 \ottava 0 \oneVoice \clef "treble" dis,,4\fermata e8 dis e gis~ |
+      r4 \ottava 0 \clef "treble^8" dis'8 r4 r8 gis8 r8 | \ottava 0\clef "bass" 
+      r4 \ottava 0 \clef "treble^15" dis'8 r4 r8 gis8 r8 | \ottava 0\clef "bass" 
+      r4 \ottava 0 \oneVoice \clef "treble" \voiceOne dis,,4\fermata e8 dis e gis~ |
     }
     \new Voice \relative c,, { \voiceTwo 
       \ottava -1 cis1~ |
       \ottava -1 cis1~ |
       \ottava -1 cis1~ |
-      \ottava -1 cis4 r2. |
+      \ottava -1 cis4 s2. |
     }
   >> \oneVoice
   gis4 ~ gis8 fis f2 ~ |
   f4. r8 r2 |
   \key d \major \bar "||"
-  r2. b,4\fermata ~ |
+  r2. b,4\fermata _~ |
   
   
   \set PianoStaff.connectArpeggios = ##t
@@ -197,7 +197,7 @@ left = \relative c' {
       fis4 s2. | \tieNeutral
     }
   >> \oneVoice
-  <a' d fis a>8 \ottava -2 d,,, ~ d2. ~ |
+  <a' d fis a>8 \ottava -2 d,,, ~ \once\override Score.Tie.layer = #-2 d2. ~ | \once\override Score.TimeSignature.layer = #-1 \once\override Score.TimeSignature.whiteout = #3
   \time 5/4
   d4 ~ d1 \ottava 0
   \time 4/4

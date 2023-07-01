@@ -9,7 +9,7 @@ right = \relative c' {
       s1 |
       cis16 e r8 s4 cis16 e r8 s4 |
       cis16 e r8 s4 cis16 e r8 s4 |
-      cis16 e gis b \oneVoice \ottava 2 <dis'' b'>2.~ |
+      cis16 e gis b \oneVoice \clef "treble^15" <dis'' b'>2.~ |
     }
     \new Voice { \voiceOne 
       cis16 e gis b r8 b16 gis r8 gis16 b dis8 b16 gis |
@@ -20,8 +20,8 @@ right = \relative c' {
   >> \oneVoice
   <dis''' b'>4 ais'8 b c2 |
   b8 ais b8 \tuplet 3/4 {ais32 gis fis} \tuplet 6/8 4 {e dis cis b ais d cis b a gis fis e}
-  \key d \major \bar "||" \ottava 0
-  \tuplet 6/8 4 {d g fis e d cis b a g cis b a g fis e d cis \change Staff = "left" b~} \hideNotes \ignore {b4} \unHideNotes |
+  \key d \major \bar "||" \ottava 0 \clef "treble"
+  \tuplet 6/8 4 {d g fis e d cis b a g cis b a g fis e d cis \change Staff = "left" b_~} \hideNotes \ignore {b4} \unHideNotes |
   \change Staff = "right"
   
   \ottava 1

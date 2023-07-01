@@ -30,8 +30,8 @@ dynamics = {
   s1\mf | s1 | 
   s2 s2\> |
   s1\p |
-  s2 s2\crescPoco |%-"cresc. poco a poco" |
-  s1\mp | s1 | 
+  s2 s2-\tweak X-offset #-0.8 -\crescPoco |%-"cresc. poco a poco" |
+  s1-\tweak X-offset #-0.3 -\mp | s1 | 
   s1\mf |
   s2 s4\> s4\! | 
   s4 s4\< | 
@@ -48,12 +48,12 @@ dynamics = {
   s2 s8. s16\> s4 | 
   s1\p | s1 | s1 | s1 | s1 | s1 | 
   s1\rit |
-  s1\mp |s1 | s1 | s1 | 
+  s1-\tweak X-offset #-0.3 -\mp |s1 | s1 | s1 | 
   s2 s2\< |
   s1\mf | s1 | s1 |
   s2. s4\f | s1 | s1 | s1 | 
   s1\dim | 
-  s1\mp | s1 | 
+  s1-\tweak X-offset #-0.3 -\mp | s1 | 
   s8. s16\< s2. |
   s1\mf\cresc |
   s2-"rit." s2\fp |
